@@ -1,0 +1,39 @@
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "email phone linked-in";
+
+  justify-items: center;
+  align-items: center;
+
+  background-image: linear-gradient(
+    var(--clr-nav-gradient-end),
+    var(--clr-nav-gradient-start)
+  );
+
+  i {
+    margin-right: 0.5rem;
+    color: var(--clr-text);
+    font-size: 1rem;
+  }
+
+  a {
+    color: var(--clr-link-text);
+    &:visited {
+      color: var(--clr-link-visited-text);
+    }
+    &:active {
+      color: var(--clr-link-active-text);
+    }
+  }
+
+  #email {
+    grid-area: email;
+  }
+  #phone {
+    grid-area: phone;
+  }
+  #linked-in {
+    grid-area: linked-in;
+  }
+}
