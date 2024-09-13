@@ -9,7 +9,8 @@ const portfolioLink = document.querySelector("#portfolio-link");
 
 // About me selectors
 const aboutMeHeader = document.querySelector("#about-me-header");
-const aboutMeText = document.querySelector("#about-me-text");
+const aboutMeEnglish = document.querySelector("#about-me-english");
+const aboutMeHungarian = document.querySelector("#about-me-hungarian");
 
 languageSwitchButton.addEventListener("click", () => {
   storeLanguage();
@@ -40,8 +41,8 @@ const switchLanguage = function (lang) {
 
     // Setting About me
     aboutMeHeader.textContent = "Rólam";
-    aboutMeText.textContent =
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque sapien mauris, nec viverra metus elementum eget. Mauris at hendrerit nisi. Mauris ornare eros quis leo viverra imperdiet. Nam non neque a eros feugiat faucibus. Ut ante erat, lacinia at est vitae, eleifend ullamcorper erat. Etiam eleifend hendrerit neque non placerat. In fermentum malesuada elit, et aliquet felis accumsan in. Morbi eleifend dolor magna, a placerat nisl sollicitudin quis. Maecenas ornare est augue, semper molestie justo auctor at. Integer vitae nisl tellus. Phasellus vel risus ac magna laoreet dignissim.";
+    aboutMeEnglish.style.display = "none";
+    aboutMeHungarian.style.display = "block";
   } else {
     // ** ENGLISH ** //
     // Setting text of links
@@ -55,8 +56,8 @@ const switchLanguage = function (lang) {
 
     // Setting About me
     aboutMeHeader.textContent = "About me";
-    aboutMeText.textContent =
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque sapien mauris, nec viverra metus elementum eget. Mauris at hendrerit nisi. Mauris ornare eros quis leo viverra imperdiet. Nam non neque a eros feugiat faucibus. Ut ante erat, lacinia at est vitae, eleifend ullamcorper erat. Etiam eleifend hendrerit neque non placerat. In fermentum malesuada elit, et aliquet felis accumsan in. Morbi eleifend dolor magna, a placerat nisl sollicitudin quis. Maecenas ornare est augue, semper molestie justo auctor at. Integer vitae nisl tellus. Phasellus vel risus ac magna laoreet dignissim.";
+    aboutMeEnglish.style.display = "block";
+    aboutMeHungarian.style.display = "none";
   }
 };
 
