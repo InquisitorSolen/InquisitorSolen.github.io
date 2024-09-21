@@ -121,6 +121,7 @@ body {
   margin: 0 0 0 0;
   display: grid;
   grid-template-rows: 5rem 1fr 1fr 3rem;
+  font-family: "Playfair Display";
 }
 
 #portfolio-link {

@@ -121,6 +121,7 @@ body {
   margin: 0 0 0 0;
   display: grid;
   grid-template-rows: 5rem 1fr 0.5fr 3rem;
+  font-family: "Playfair Display";
 }
 
 #home-link {
@@ -134,7 +135,9 @@ body {
 }
 #about-me #picture {
   grid-area: 2/2/5/4;
-  background-image: radial-gradient(red, yellow, green);
+  background-image: url("../images/FBD_profile_pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: var(--clr-box-shadow) -1rem 1rem;
   border-radius: 1rem;
   z-index: 2;
@@ -152,8 +155,10 @@ body {
 }
 #about-me #card-text h1 {
   color: var(--clr-text);
+  font: bolder 2rem "Playfair Display";
 }
 #about-me #card-text p {
   text-align: justify;
   color: var(--clr-text);
+  font-size: larger;
 }/*# sourceMappingURL=main.css.map */
